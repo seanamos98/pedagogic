@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family-Arima+Madurai:300");
+// variables
+$main-color: #d87093;
+$sub-color: #f8bfd2;
+$white-color: #f7f7f7;
+
+.icon {
+  font-size: 2rem;
+  color: ($main-color);
+}
+
+.btn {
+  background-color: darken(($main-color), 40%);
+  border-radius: 3px;
+  border: 2px solid darken(($main-color), 30%);
+  margin: 0 1em 0.5em 1em;
+  color: #fff;
+  padding: 0.25em 1em;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.showcase {
+  background: url(./images/university-1.jpg) no-repeat;
+  height: 500px;
+  margin-top: 50px;
+  background-size: cover;
+  span {
+    color: ($main-color);
+  }
+  .pedagog-logo {
+    width: 22%;
+    height: 160px;
+    background-color: black;
+    position: relative;
+    top: 340px;
+    line-height: 10px;
+    justify-content: center;
+
+    .icon {
+      font-size: 50px;
+      color: ($main-color);
+      margin: 15px 26px;
+      @media (min-width: 768px) {
+        margin: 15px 50px;
+      }
+      @media (min-width: 992px) {
+        margin: 15px 77px;
+      }
+      @media (min-width: 1200px) {
+        margin: 15px 87px;
+      }
+    }
+  }
+}
+
+.section-2 {
+  .box-1 {
+    // height: 600px;
+    background-size: cover;
+    position: relative;
+    .img:hover {
+      transform: scale(1.1);
+
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      overflow: hidden;
+    }
+  }
+  .overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: #000000;
+    top: 120px;
+    background: #00000080;
+    color: #f1f1f1;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: #fff;
+
+    font-size: 20px;
+    .btn {
+      margin-left: 170px;
+    }
+  }
+}
+
+.box-1:hover .overlay {
+  cursor: pointer;
+  background: #000000;
+  opacity: 0.75;
+}
+.box-2:hover .overlay {
+  background: #000000;
+  opacity: 0.75;
+}
+.box-3:hover .overlay {
+  background: #000000;
+  opacity: 0.75;
+}
+.section-3 {
+  border: 2px solid ($white-color);
+}
+
+.section-5 {
+  height: 220px;
+  border: 2px solid ($white-color);
+  h4 {
+    font-size: xx-large;
+  }
+}
+
+.navbar {
+  background-color: ($main-color) !important;
+  .icon-brand {
+    font-size: 2rem;
+    margin-right: 5px;
+    color: ($white-color);
+  }
+}
+
+.footer {
+  background-color: ($main-color);
+  .icon-footer {
+    font-size: 1rem;
+    color: $main-color;
+  }
+  h5 {
+    border-bottom: 1px solid ($white-color);
+  }
+  .pinnacle {
+    width: 24%;
+    height: 70px;
+    background-color: #000;
+    position: relative;
+
+    left: 200px;
+    line-height: 10px;
+    .icon {
+      font-size: 1rem;
+      color: ($main-color);
+      margin: 1px 5px 1px 5px;
+      @media (min-width: 768px) {
+        margin: 2px 26px 2px 26px;
+        padding-left: 2px;
+      }
+      @media (min-width: 992px) {
+        margin: 3px 40px 10px 40px;
+      }
+      @media (min-width: 1200px) {
+        margin: 4px 56px 4px 56px;
+      }
+    }
+  }
+}
+
+// auth
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 100px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+// courses
+
+.courses {
+  margin-top: 100px;
+}
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+}
