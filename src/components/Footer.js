@@ -99,15 +99,22 @@ const Footer = () => {
           </div>
 
           <div className="pinnacle">
-            <p className="text-light text-center font-weight-light pl-4 pt-3">
+            {/* <span className="text-light text-center font-weight-light pl-5  pinnacle-power">
               powered by
-            </p>
-            <div className="d-flex ">
-              <FontAwesomeIcon icon={faHandRock} className="icon" />
-              <p className="text-light text-center font-weight-bold  px-1">
+            </span> */}
+            <div className=" d-flex">
+              <FontAwesomeIcon icon={faHandRock} className="icon pt-1" />
+              <p className="text-light text-center py-2 font-weight-bold ">
+                <span className=" pinnacle-power">Power by </span> <br />
+                <br />
                 pinnacle
               </p>
             </div>
+          </div>
+          <div>
+            <p className="text-light text-center pt-2  ">
+              Copyright 2020 &copy; Pedagog Online School
+            </p>
           </div>
         </Container>
       </div>

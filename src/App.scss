@@ -36,7 +36,7 @@ a:hover {
     color: ($main-color);
   }
   .pedagog-logo {
-    width: 22%;
+    width: 100px;
     height: 160px;
     background-color: black;
     position: relative;
@@ -48,22 +48,12 @@ a:hover {
       font-size: 50px;
       color: ($main-color);
       margin: 15px 26px;
-      @media (min-width: 768px) {
-        margin: 15px 50px;
-      }
-      @media (min-width: 992px) {
-        margin: 15px 77px;
-      }
-      @media (min-width: 1200px) {
-        margin: 15px 87px;
-      }
     }
   }
 }
 
 .section-2 {
   .box-1 {
-    // height: 600px;
     background-size: cover;
     position: relative;
     .img:hover {
@@ -136,27 +126,29 @@ a:hover {
     border-bottom: 1px solid ($white-color);
   }
   .pinnacle {
-    width: 24%;
-    height: 70px;
+    width: 112px;
+    height: 40px;
     background-color: #000;
     position: relative;
-
-    left: 200px;
-    line-height: 10px;
+    left: 180px;
+    line-height: 5px;
+    &-power {
+      font-size: 14px;
+      font-weight: lighter;
+    }
     .icon {
-      font-size: 1rem;
+      font-size: 2rem;
       color: ($main-color);
       margin: 1px 5px 1px 5px;
-      @media (min-width: 768px) {
-        margin: 2px 26px 2px 26px;
-        padding-left: 2px;
-      }
-      @media (min-width: 992px) {
-        margin: 3px 40px 10px 40px;
-      }
-      @media (min-width: 1200px) {
-        margin: 4px 56px 4px 56px;
-      }
+    }
+    @media (min-width: 768px) {
+      left: 300px;
+    }
+    @media (min-width: 992px) {
+      left: 400px;
+    }
+    @media (min-width: 1200px) {
+      left: 500px;
     }
   }
 }

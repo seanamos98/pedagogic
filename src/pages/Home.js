@@ -4,7 +4,7 @@ import { faBookReader } from "@fortawesome/free-solid-svg-icons/faBookReader";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 
-import { Container, Button, Image, Carousel, Card } from "react-bootstrap";
+import { Container, Button, Image, Carousel } from "react-bootstrap";
 
 const Home = () => {
   function ControlledCarousel() {
@@ -15,69 +15,45 @@ const Home = () => {
     };
 
     return (
-      <Carousel
-        className="carousel"
-        activeIndex={index}
-        onSelect={handleSelect}
-      >
+      <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <Card className="card">
-            <Card.Img
-              className="card-img"
-              variant="top"
-              src="students10.jpg"
-              alt="showing pedagog "
-            />
-            <Card.Body>
-              <Card.Text>
-                <figcaption className=" text-dark">
-                  extracurricular opportunities
-                </figcaption>
-              </Card.Text>
-              <FontAwesomeIcon icon={faBook} className="icon" />
-            </Card.Body>
-          </Card>
+          <Image
+            className="d-block w-100"
+            src="students10.jpg"
+            alt="showing pedagog "
+          />
+          <Carousel.Caption className="bg-dark">
+            <p> extracurricular opportunities</p>
+            <FontAwesomeIcon icon={faBook} className="icon" />
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Card className="card">
-            <Card.Img
-              className="card-img"
-              variant="top"
-              src="student11.jpg"
-              alt="showing pedagog "
-            />
-            <Card.Body>
-              <Card.Text>
-                <figcaption className="text-dark">
-                  request for our prospectus
-                </figcaption>
-              </Card.Text>
-              <FontAwesomeIcon icon={faBook} className="icon" />
-            </Card.Body>
-          </Card>
+          <Image
+            className="d-block w-100"
+            src="student11.jpg"
+            alt="showing pedagog "
+          />
+
+          <Carousel.Caption className="bg-dark">
+            <p> request for our prospectus</p>
+            <FontAwesomeIcon icon={faBook} className="icon" />
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Card className="card">
-            <Card.Img
-              className="card-img"
-              variant="top"
-              src="carol.jpg"
-              alt="showing pedagog "
-            />
-            <Card.Body>
-              <Card.Text>
-                <figcaption className="text-dark">
-                  meet the head of department, heather rhodes
-                </figcaption>
-              </Card.Text>
-              <FontAwesomeIcon icon={faBook} className="icon" />
-            </Card.Body>
-          </Card>
+          <Image
+            className="d-block w-100"
+            src="carol.jpg"
+            alt="showing pedagog "
+          />
+
+          <Carousel.Caption className="bg-dark">
+            <p>meet the head of department, heather rhodes</p>
+            <FontAwesomeIcon icon={faBook} className="icon" />
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     );
   }
-
   return (
     <React.Fragment>
       <section className="showcase">
@@ -124,7 +100,6 @@ const Home = () => {
                 height="350px"
                 width="100%"
                 alt="pedagog online school"
-                responsive
               />
               <div className="overlay">
                 <h2 className="text-center p-3 text-uppercase">
@@ -143,7 +118,6 @@ const Home = () => {
                 height="350px"
                 width="100%"
                 alt="pedagog online school"
-                responsive
               />
               <div className="overlay">
                 <h2 className="text-center pt-3 text-uppercase">
@@ -163,7 +137,6 @@ const Home = () => {
                 width="100%"
                 height="350px"
                 alt="pedagog online school"
-                responsive
               />
               <div className="overlay">
                 <h2 className="text-center p-3 text-uppercase">

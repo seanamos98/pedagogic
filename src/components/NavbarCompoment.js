@@ -48,8 +48,7 @@ const NavbarComponents = () => {
               <NavDropdown.Item href="/courses/add">
                 Course Form
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
+
               <NavDropdown.Item href="/courses/:id">
                 Course List
               </NavDropdown.Item>
