@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css?family-Arima+Madurai:300");
 // variables
 $main-color: #d87093;
-$sub-color: #f8bfd2;
 $white-color: #f7f7f7;
 
 .icon {
@@ -200,6 +199,7 @@ label {
 }
 
 .submit-form {
+  padding-top: 60px;
   max-width: 300px;
   margin: auto;
 }

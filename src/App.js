@@ -40,9 +40,9 @@ function App(props) {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/user" component={BoardUser} />
           <PrivateRoute path="/admin" component={AdminBoard} />
-          <Route path="/courses" component={ManageCoursePage} />
-          <Route path="/courses/:id" component={CourseList} />
+          <Route exact path="/courses" component={ManageCoursePage} />
           <Route path="/courses/add" component={CourseForm} />
+          <Route path="/courses/:id" component={CourseList} />
         </Switch>
         <Footer />
       </Router>

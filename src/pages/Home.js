@@ -156,10 +156,13 @@ const Home = () => {
               setting your child up for the future
             </h3>
             <p className="">
-              Pedagog School Online prepares students for the world's top jobs
-              and beyond, with rigorous academic studies combined with a diverse
-              range of extracurricular activities to develop character and
-              foster friendships with peers across the world
+              Pedagog School Online{" "}
+              <strong>
+                prepares students for the world's top jobs and beyond,
+              </strong>{" "}
+              with rigorous academic studies combined with a diverse range of
+              extracurricular activities to develop character and foster
+              friendships with peers across the world
             </p>
           </Container>
         </section>

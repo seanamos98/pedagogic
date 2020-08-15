@@ -99,9 +99,6 @@ const Footer = () => {
           </div>
 
           <div className="pinnacle">
-            {/* <span className="text-light text-center font-weight-light pl-5  pinnacle-power">
-              powered by
-            </span> */}
             <div className=" d-flex">
               <FontAwesomeIcon icon={faHandRock} className="icon pt-1" />
               <p className="text-light text-center py-2 font-weight-bold ">
@@ -113,7 +110,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-light text-center pt-2  ">
-              Copyright 2020 &copy; Pedagog Online School
+              Copyright 2020 &copy; Pedagog <em>Online</em> School
             </p>
           </div>
         </Container>
